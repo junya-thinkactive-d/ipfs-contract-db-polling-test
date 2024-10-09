@@ -26,6 +26,8 @@ model UploadStatus {
   imageUploadStatus    String
   metadataUploadStatus String
   nftMintStatus        String
+  metadataHash         String?  // この行を追加
+  tokenId              String?  // この行も追加（必要に応じて）
   dbSaveStatus         String
   createdAt            DateTime @default(now())
   updatedAt            DateTime @updatedAt

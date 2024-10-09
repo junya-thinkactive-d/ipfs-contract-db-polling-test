@@ -4,6 +4,8 @@ export type UploadStatus = {
   metadataUploadStatus: string;
   nftMintStatus: string;
   dbSaveStatus: string;
+  metadataHash?: string;
+  tokenId?: string; // この行を追加
   createdAt: Date;
   updatedAt: Date;
 };
